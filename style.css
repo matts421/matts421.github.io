@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background-color: #303444;
+}
+
+.name{
+    color: white;
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.hyperlink{
+    color:white;
+}
+
+.hyperlink:visited{
+    color:white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #0f1220;
+
+    border-bottom: 3px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-color: #fdfdfd;
+
+    position: sticky;
+    top: 0;
+}
+
+.navlinks{
+    list-style: none;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.navlinks li a{
+    color: rgba(255,255,255,1);
+}
+
+.navlinks li a:hover{
+    color: rgba(255,255,255, 0.8);
+}
+
+.codetyping::before{
+    padding-left: 1%;
+    animation: typing;
+    animation-duration: 10s;
+    content: "|";
+    animation-iteration-count: infinite;
+}
+
+.codetyping{
+    display: flex;
+    padding: 50px 10%;
+    color: rgb(184, 222, 231);
+    font-family: "Press Start 2P";
+    font-weight: 400;
+    font-size: 48px;
+}
+
+hr{
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.interests{
+    display: flex;
+    padding: 10px 5%;
+
+    flex-direction: column;
+    list-style:square;
+}
+
+.interests li{
+    padding: 0px 5px;
+}
+
+.education_and_interests{
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    flex-direction: row;
+    color: white;
+    gap: 20px;
+
+}
+
+.main_with_sidebar{
+    display: flex;
+    padding: 20px 10%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    flex-direction: row;
+}
+
+.body_text{
+    display: flex;
+    width: 75%;
+    padding: 20px 10%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.body_text a{
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+}
+
+.body_text a:hover{
+    color: rgba(255,255,255, 0.8);
+}
+
+.projects{
+    display: flex;
+    width: 100%;
+    padding: 50px 10%;
+    padding-bottom: 100px;
+    justify-content: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.school{
+    font-size: 20px;
+    color:rgb(199, 197, 197);
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.education{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.profile_image{
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile_image img{
+    color:white;
+}
+
+.project{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    width: 256px;
+}
+
+.project a{
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.project a img{
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    transition: all 400ms ease;
+}
+
+.project a img:hover{
+    transform: scale(1.1);
+    opacity: 80%;
+}
+
+.project:hover #text1{
+    opacity: 1;
+}
+
+#text1{
+    opacity: 0;
+    transition: all 0.5s;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+h1{
+    display: flex;
+    width: 80%;
+    padding: 20px 10%;
+    color: rgb(184, 222, 231);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 48px;
+}
+
+footer{
+    width: 100%;
+    padding: 30px 10%;
+    height: 20px;
+    background-color: #0f1220;
+    /* border-top: 3px solid;
+    border-color: white; */
+}
+
+@keyframes typing {
+    0%{
+        content: "|"
+    }
+
+    6%{
+        content: "H|"
+    }
+
+    12%{
+        content: "He|"
+    }
+
+    18%{
+        content: "Hel|"
+    }
+
+    24%{
+        content: "Hell|"
+    }
+
+    30%{
+        content: "Hello|"
+    }
+
+    36%{
+        content: "Hello,|"
+    }
+
+    42%{
+        content: "Hello, |"
+    }
+
+    48%{
+        content: "Hello, W|"
+    }
+
+    54%{
+        content: "Hello, Wo|"
+    }
+
+    60%{
+        content: "Hello, Wor|"
+    }
+
+    66%{
+        content: "Hello, Worl|"
+    }
+
+    72%{
+        content: "Hello, World|"
+    }
+
+    78%{
+        content: "Hello, World!|"
+    }
+
+    84%{
+        content: "Hello, World!"
+    }
+
+    90%{
+        content: "Hello, World!|"
+    }
+
+
+}
