@@ -172,6 +172,8 @@ hr{
 
 .profile_image img{
     color:white;
+    width: 256px;
+    height: auto;
 }
 
 .project{
@@ -221,7 +223,7 @@ h1{
     color: rgb(184, 222, 231);
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
-    font-size: 48px;
+    font-size: 56px;
 }
 
 footer{
