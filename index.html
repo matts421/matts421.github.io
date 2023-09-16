@@ -17,6 +17,34 @@
                 <b>Matthew Smith</b>
             </div>
 
+            <div>
+                <ul class="navlinks">
+                    <li>
+                        <p>
+                            <a href="#about">
+                                About
+                            </a>
+                            |
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#experience">
+                                Experience
+                            </a>
+                            |
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#projects">
+                                Projects
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
             <nav>
                 <ul class="navlinks">
                     <li><a href="https://www.github.com/matts421" target="_blank">
@@ -33,7 +61,7 @@
         <!-- <div class="codetyping">
         </div> -->
 
-        <h1>
+        <h1 id="about">
             About Me
         </h1>
 
@@ -47,6 +75,10 @@
     
                 <p>
                     To supplement my Physics background, I am taking a second degree in Computer Science at UBC. I am currently in my second-year of studies.
+                </p>
+
+                <p>
+                    I am seeking internship opportunities in software engineering starting in May 2024! My contact info can be found via <a href="https://www.linkedin.com/in/matthew-smith-0680b2191/"><b>LinkedIn</b></a>.
                 </p>
             </div>
             <div class="profile_image">
@@ -84,9 +116,59 @@
         </div>
 
         <hr>
+        <h1 id="experience">
+            Experience
+        </h1>
+
+        <div class="experience">
+            <div>
+                <h2>LISA Data Challenge Researcher</h2>
+                <h5><i>UBC LISA Group</i> - 2023</h5>
+                <ul class="interests">
+                    <li> Developed various statistical techniques to detect artefacts in the Laser Interferometer Space Antenna (LISA)
+                        <b>time-series</b> gravitational wave data.
+                    </li>
+                    <li>
+                        Implemented improved artefact detection and removal algorithms in Fourier space with <b>Python</b>.
+                    </li> 
+                    <li>
+                        Utilized a computing cluster to perform a <b>maximum-likelihood gridsearch</b> and Monte Carlo Markov Chain sampling
+                        to extract relevant parameters.
+                    </li>
+                    <li>
+                        Collaborated with the UBC LISA group and the LISA Consortium, where I regularly presented new findings.
+                    </li>
+                    <li>
+                        Wrote a 50+ page <b><a href="assets/thesis.pdf" target="_blank">thesis</a></b> detailing my work, specifically pertaining to windowing function optimizations.
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Deep Learning Research Assistant</h2>
+                <h5><i>BC Cancer Research Centre</i> - 2022</h5>
+                <ul class="interests">
+                    <li> Curated a training set of thousands of images for a sequential <b>UNet (SUNet)</b> tasked with nuclei <b>segmentation</b>.
+                    </li>
+                    <li>
+                        Continually evaluated the SUNet's performance, and identified necessary modifications.
+                    </li>
+                    <li>
+                        Developed a proccess to build a training set for cancer-cell classification in epithelial microscopy slides.
+                    </li>
+                    <li>
+                        Evaluated the efficacy of different neural network architectures for the <b>image classification</b> task.
+                    </li>
+                    <li>
+                        Utilized <b>SOLIDWORKS</b> and <b>KiCad</b> to design an LED multispectral condenser for microscopy applications.
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
-        <h1>
+        <hr>
+        <h1 id="projects">
             Projects
         </h1>
 
@@ -115,10 +197,15 @@
                 </a>
                 <p id="text1"><b>Thesis</b><br>GW Extraction With LISA</p>
             </div>
+            <div class="project">
+                <a>
+                    <img src="assets/lolesports.png" alt="GPRH Image" />
+                </a>
+                <p id="text1"><b>Python, JS, SQL</b><br>Coming Soon...</p>
+            </div>
         </div>
 
         <br>
-
 
         <footer>
         </footer>

@@ -49,7 +49,26 @@ header {
 }
 
 .navlinks li a{
+    text-decoration: none;
     color: rgba(255,255,255,1);
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.navlinks li p{
+    color: rgba(255,255,255,1);
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.navlinks li p a{
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
 }
 
 .navlinks li a:hover{
@@ -103,6 +122,46 @@ hr{
     color: white;
     gap: 20px;
 
+}
+
+.experience{
+    display: flex;
+    padding: 20px 10%;
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    flex-direction: column;
+    color: white;
+    gap: 50px;
+}
+
+/* .experience div{
+    display: flex;
+    padding: 20px 10%;
+    width: 90%;
+    margin-right: auto;
+} */
+
+.experience ul{
+    display: flex;
+    padding: 10px 5%;
+
+    flex-direction: column;
+    list-style:square;
+    line-height: 175%;
+}
+
+.experience ul li{
+    padding: 0px 5px;
+}
+
+.experience ul li:nth-child(even){
+    color: rgb(184, 222, 231);
+}
+
+.experience ul li a{
+    color: rgba(255,255,255,1);
 }
 
 .main_with_sidebar{
@@ -161,6 +220,10 @@ hr{
 .education{
     margin-top: 10px;
     list-style: none;
+}
+
+.education li i{
+    margin-right: 20px;
 }
 
 .profile_image{
