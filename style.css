@@ -12,7 +12,7 @@ html, body{
     color: white;
     font-family: "Source Code Pro", sans-serif;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .hyperlink{
@@ -53,14 +53,14 @@ header {
     color: rgba(255,255,255,1);
     font-family: "Source Code Pro", sans-serif;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .navlinks li p{
     color: rgba(255,255,255,1);
     font-family: "Source Code Pro", sans-serif;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .navlinks li p a{
@@ -68,7 +68,7 @@ header {
     color: rgba(255,255,255,1);
     font-family: "Source Code Pro", sans-serif;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .navlinks li a:hover{
@@ -104,6 +104,7 @@ hr{
 
     flex-direction: column;
     list-style:square;
+    list-style-position: inside;
 }
 
 .interests li{
@@ -124,6 +125,12 @@ hr{
 
 }
 
+.education_and_interests div{
+    border-radius: 20px;
+    padding: 20px 25px;
+    background-color: #1b1e2c;;
+}
+
 .experience{
     display: flex;
     padding: 20px 10%;
@@ -134,6 +141,12 @@ hr{
     flex-direction: column;
     color: white;
     gap: 50px;
+}
+
+.experience div{
+    padding: 50px;
+    background-color: #1b1e2c;
+    border-radius: 20px;
 }
 
 /* .experience div{
@@ -176,7 +189,7 @@ hr{
 .body_text{
     display: flex;
     width: 75%;
-    padding: 20px 10%;
+    padding: 0px 10%;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
@@ -188,7 +201,6 @@ hr{
 .body_text a{
     font-weight: 200;
     color: white;
-    text-decoration: none;
 }
 
 .body_text a:hover{
@@ -220,10 +232,13 @@ hr{
 .education{
     margin-top: 10px;
     list-style: none;
+    list-style-position: inside;
+    font-size: 20px;
 }
 
 .education li i{
     margin-right: 20px;
+    font-size: 20px;
 }
 
 .profile_image{
