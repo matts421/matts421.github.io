@@ -4,9 +4,11 @@ import { Menu } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, MenuItem } from "@mui/material";
+import { useSelector } from "react-redux";
+import { RootState } from "../store.ts";
 
 function NavigationHub() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const width = useSelector((state: RootState) => state.windowSize.width);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -18,15 +20,11 @@ function NavigationHub() {
     window.location.replace(location);
   };
 
-  window.addEventListener("resize", () => {
-    setWindowWidth(window.innerWidth);
-  });
-
   return (
     <>
-      {windowWidth > 825 && (
+      {width > 825 && (
         <Box sx={{ flexGrow: 1 }}>
-          <Button color="secondary" href="#about">
+          <Button color="secondary" href="#">
             About
           </Button>
           <Button color="secondary" href="#experience">
@@ -40,7 +38,7 @@ function NavigationHub() {
           </Button>
         </Box>
       )}
-      {windowWidth <= 825 && (
+      {width <= 825 && (
         <>
           <IconButton
             size="large"
@@ -53,7 +51,7 @@ function NavigationHub() {
             <MenuIcon />
           </IconButton>
           <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-            <MenuItem onClick={() => handleClose("#about")}>About</MenuItem>
+            <MenuItem onClick={() => handleClose("#")}>About</MenuItem>
             <MenuItem onClick={() => handleClose("#experience")}>
               Experience
             </MenuItem>
