@@ -157,20 +157,18 @@ function ExperienceTimeline() {
       )}
       {!normalMode && (
         <Container id="experience">
-          <Typography variant="h4" sx={{ mx: "auto", mb: "2rem" }}>
-            Experience
-          </Typography>
           <Timeline position="alternate">
             {jobs.map((job, i) => {
               return (
                 <TimelineItem>
                   <TimelineSeparator>
+                    {i == 0 && <TimelineConnector />}
                     <ExperienceModal
                       job={job}
                       icon={<RadioButtonUncheckedIcon />}
                       isIconButton={true}
                     />
-                    {i != jobs.length - 1 && <TimelineConnector />}
+                    <TimelineConnector />
                   </TimelineSeparator>
                   <TimelineContent color="primary">
                     <b>{job.start}</b>

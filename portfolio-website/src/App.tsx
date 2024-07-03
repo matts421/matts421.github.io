@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { updateSize } from "./features/windowSize/windowSizeSlice.ts";
 import InfoStack from "./components/InfoStack.tsx";
 import ExperienceTimeline from "./components/ExperienceTimeline.tsx";
+import ProjectsMasonry from "./components/ProjectsMasonry.tsx";
 
 function App() {
   const mode = useSelector((state: RootState) => state.mode.mode);
@@ -34,6 +35,7 @@ function App() {
         <AboutMe />
         <InfoStack />
         <ExperienceTimeline />
+        <ProjectsMasonry />
       </Container>
     </ThemeProvider>
   );
