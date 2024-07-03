@@ -63,6 +63,7 @@ function InfoStack() {
       <Paper
         sx={{ width: normalMode ? "40%" : "100%", my: "1rem", mx: "auto" }}
         elevation={elevation}
+        id="experience"
       >
         <Typography variant="h4" sx={{ mt: "1rem" }}>
           Interests

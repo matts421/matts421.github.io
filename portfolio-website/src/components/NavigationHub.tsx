@@ -17,7 +17,7 @@ function NavigationHub() {
   };
   const handleClose = (location: string) => {
     setAnchorEl(null);
-    window.location.replace(location);
+    window.location.href = location;
   };
 
   return (
@@ -33,9 +33,9 @@ function NavigationHub() {
           <Button color="secondary" href="#projects">
             Projects
           </Button>
-          <Button color="secondary" href="#blog">
+          {/* <Button color="secondary" href="#blog">
             Blog
-          </Button>
+          </Button> */}
         </Box>
       )}
       {width <= 825 && (
@@ -58,7 +58,7 @@ function NavigationHub() {
             <MenuItem onClick={() => handleClose("#projects")}>
               Projects
             </MenuItem>
-            <MenuItem onClick={() => handleClose("#blog")}>Blog</MenuItem>
+            {/* <MenuItem onClick={() => handleClose("#blog")}>Blog</MenuItem> */}
           </Menu>
           <Box sx={{ flexGrow: 1 }}></Box>
         </>
