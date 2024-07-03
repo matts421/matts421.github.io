@@ -7,6 +7,8 @@ import NavigationHub from "./NavigationHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+//TODO: add blog tab
+
 function Navbar() {
   return (
     <AppBar sx={{ top: 0 }}>
