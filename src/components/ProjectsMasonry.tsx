@@ -47,7 +47,7 @@ function ProjectsMasonry() {
       technologies: ["Python", "LaTeX", "matplotlib"],
       photo:
         "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmFzYXxlbnwwfHwwfHx8MA%3D%3D",
-      link: "public/thesis.pdf",
+      link: "/thesis.pdf",
     },
   ];
 
