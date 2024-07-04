@@ -54,7 +54,7 @@ function AboutMe() {
         </Typography>
         <Typography variant="body1" align="left" sx={{ m: "1rem" }}>
           More recently, during my Computer Science degree, I interned at{" "}
-          <u>AWS</u>. Here I mainly focussed on developing GenAI-based
+          <u>AWS</u>. Here I mainly focused on developing GenAI-based
           applications.
         </Typography>
         <Alert
