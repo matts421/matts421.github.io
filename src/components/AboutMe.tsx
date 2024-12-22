@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Paper,
-  Typography,
-  Avatar,
-  Alert,
-} from "@mui/material";
+import { Box, Container, Paper, Typography, Avatar } from "@mui/material";
 import avatar from "../assets/profile.png";
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
@@ -34,7 +27,7 @@ function AboutMe() {
         />
         <Typography variant="h5">Matthew Smith</Typography>
         <Typography color="primary" variant="subtitle1" sx={{ mb: "2rem" }}>
-          Software Dev Engineer @ AWS
+          Software Engineer
         </Typography>
       </Box>
       <Paper elevation={20} square={false}>
@@ -52,23 +45,11 @@ function AboutMe() {
           <u>BC Cancer Research Centre</u> and data analysis at the{" "}
           <u>LISA Consortium</u>.
         </Typography>
-        <Typography variant="body1" align="left" sx={{ m: "1rem" }}>
+        <Typography variant="body1" align="left" sx={{ m: "1rem", mb: "2rem" }}>
           More recently, during my Computer Science degree, I interned at{" "}
           <u>AWS</u>. Here I mainly focused on developing GenAI-based
           applications.
         </Typography>
-        <Alert
-          sx={{
-            mx: "auto",
-            my: "2rem",
-            width: "80%",
-          }}
-          variant="outlined"
-          severity="info"
-          color="success"
-        >
-          Currently seeking full-time roles (Starting May 2025)
-        </Alert>
       </Paper>
     </Container>
   );
