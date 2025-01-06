@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--text-two);
+  padding: 1rem;
+
+  p {
+    margin: 0;
+    padding: 0.25rem 0 1rem;
+    color: var(--text-two);
+  }
+
+  em {
+    font-size: smaller;
+  }
+}
+
+.project:hover {
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  transform: scale(1.05);
+}
