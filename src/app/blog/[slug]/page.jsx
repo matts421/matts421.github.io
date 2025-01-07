@@ -1,10 +1,18 @@
-import getPosts from "@/lib/blog";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import Link from "next/link";
+import { getPosts, loadPost } from "@/lib/blog";
 
 export default async function Page({ params }) {
   const { slug } = await params;
-  const { default: Post } = await import(`@/../content/${slug}.mdx`);
-
-  return <Post />;
+  const post = await loadPost(slug);
+  // const obj = await import(`@/../content/${slug}.mdx`);
+  return (
+    <>
+      <Link href="/blog">← Take me home</Link>
+      <h1>{post.data.title}</h1>
+      <MDXRemote source={post.content} />
+    </>
+  );
 }
 
 export async function generateStaticParams() {
