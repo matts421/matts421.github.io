@@ -1,5 +1,3 @@
-// import Image from "next/image";
-// import styles from "./page.module.css";
 import { JobIntro, JobList } from "@/components/Work";
 import styles from "@/app/ui/home.module.css";
 
@@ -11,7 +9,7 @@ export default function Home() {
   return (
     <>
       <section>
-        <h1 style={{ margin: "0rem 0rem" }}>Matthew Smith</h1>
+        <h1 style={{ marginBottom: 0 }}>Matthew Smith</h1>
         <JobIntro />
         <p>
           I'm a senior CS student at UBC. I have a background in physics,
@@ -33,7 +31,7 @@ export default function Home() {
                 <em>University of British Columbia</em>
               </div>
             </div>
-            <span>05/2025</span>
+            <span>2025</span>
           </li>
           <li>
             <div>
@@ -42,7 +40,7 @@ export default function Home() {
                 <em>University of British Columbia</em>
               </div>
             </div>
-            <span>05/2023</span>
+            <span>2023</span>
           </li>
         </ul>
       </section>

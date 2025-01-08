@@ -11,18 +11,19 @@ export default async function Blog() {
         <div className="data">
           <ul className={styles["blog-entries"]}>
             {posts.map((post, idx) => (
-              <li
-                key={`blog-${idx}`}
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                }}
-              >
-                <Link href={`/blog/${post.slug}`} style={{ maxWidth: "80%" }}>
-                  {post.title}
-                </Link>
-                <div>{post.date.substring(0, 5)}</div>
+              <li key={`blog-${idx}`}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                  <div style={{ minWidth: "4rem", paddingLeft: "1rem" }}>
+                    <em>{post.date.substring(0, 5)}</em>
+                  </div>
+                </div>
               </li>
             ))}
           </ul>

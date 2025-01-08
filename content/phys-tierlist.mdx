@@ -2,138 +2,36 @@
 title: A review of UBC's physics courses
 slug: phys-tierlist
 date: 01-06-2025
-description: Dummy desc
 ---
 
-During my honours physics degree, I took _a lot_ of courses.
-I want to commemorate my time in physics in the best way possible: **a tierlist**.
+As I enter my final semester of university, I have the chance to reflect on the time I've spent here at UBC. In doing so, I've realized that soon my brain
+will no longer revolve around all-things-student, and my college memories will begin to blur. So, while all the information is still (pseudo) fresh, I need to create
+a proper digest of my physics degree. Honouring this theme, let's do this in the nerdiest and most physics-y way possible: with a **tierlist**.
 
-Of course, every tierlist needs a rubric. Here are things I _did_ consider for each ranking:
+Of course, every good tierlist needs a rubric. Here are things I _do_ consider for each ranking:
 
 1. _Usefulness._ How useful is the course for post-school life?
-2. _Execution._ Given what the course set out to do, how well does it accomplish this?
-3. _Organization._ Did the content of the course have a good logical flow? Was the scope reasonable given the time-frame?
-4. _Overall vibes._ This speaks for itself.
+2. _Execution._ Given what the course sets out to do, how well does it accomplish this?
+3. _Organization._ Are the topic and quantity of the course content reasonable?
 
-More notably, these are things I _did not_ consider for each ranking:
+Let me lead with a forewarning; these are things I absolutely _do not_ consider for each ranking:
 
-1. _Professor._ Who teaches a course often changes, and it is not my intention to use this platform to provide performance reviews of faculty.
-2. _Grades._ I want this tierlist to focus on the learning takeaways of each course, not how easy it is to get an A.
+1. _Professor._ Teaching staff often changes, and it is not my intention to use this platform to provide performance reviews of faculty.
+2. _Grades._ Including this metric skews the rankings to not properly reflect the true learning takeaways of a course.
 
-Without further ado, here's the list:
+Here's the list<sup>1</sup>:
 
-<div style={{ display: "flex", gap: "1rem" }}>
-  <h2>S</h2>
-  <ul
-    style={{
-      display: "flex",
-      flexWrap: "wrap",
-      listStyle: "none",
-      gap: "0 0.5rem",
-      paddingBottom: "1rem",
-    }}
-  >
-    <li>PHYS 410</li>
-    <li>MATH 400</li>
-    <li>PHYS 449</li>
-    <li>CPSC 110</li>
-    <li>PHYS 402</li>
-    <li>PHYS 409</li>
-    <li>MATH 317</li>
-  </ul>
-</div>
-<div style={{ display: "flex", gap: "1rem" }}>
-  <h2>A</h2>
-  <ul
-    style={{
-      display: "flex",
-      flexWrap: "wrap",
-      listStyle: "none",
-      gap: "0 0.5rem",
-      paddingBottom: "1rem",
-    }}
-  >
-    <li>PHYS 403</li>
-    <li>CPSC 121</li>
-    <li>GERM 100</li>
-    <li>PHYS 210</li>
-    <li>PHYS 309</li>
-    <li>PHYS 216</li>
-    <li>SCIE 001</li>
-    <li>MATH 316</li>
-  </ul>
-</div>
-<div style={{ display: "flex", gap: "1rem" }}>
-  <h2>B</h2>
-  <ul
-    style={{
-      display: "flex",
-      flexWrap: "wrap",
-      listStyle: "none",
-      gap: "0 0.5rem",
-      paddingBottom: "1rem",
-    }}
-  >
-    <li>AMNE 101</li>
-    <li>STAT 200</li>
-    <li>ECON 102</li>
-    <li>PHYS 401</li>
-    <li>PHYS 229</li>
-    <li>PHYS 474</li>
-    <li>MATH 221</li>
-    <li>MATH 215</li>
-  </ul>
-</div>
-<div style={{ display: "flex", gap: "1rem" }}>
-  <h2>C</h2>
-  <ul
-    style={{
-      display: "flex",
-      flexWrap: "wrap",
-      listStyle: "none",
-      gap: "0 0.5rem",
-      paddingBottom: "1rem",
-    }}
-  >
-    <li>PHYS 407</li>
-    <li>HIST 109</li>
-    <li>ENGL 110</li>
-    <li>WRDS 150</li>
-    <li>PHYS 306</li>
-    <li>MATH 300</li>
-    <li>MATH 318</li>
-  </ul>
-</div>
-<div style={{ display: "flex", gap: "1rem" }}>
-  <h2>D</h2>
-  <ul
-    style={{
-      display: "flex",
-      flexWrap: "wrap",
-      listStyle: "none",
-      gap: "0 0.5rem",
-      paddingBottom: "1rem",
-    }}
-  >
-    <li>PHYS 200</li>
-    <li>PHYS 203</li>
-    <li>MATH 200</li>
-    <li>PHYS 301</li>
-  </ul>
-</div>
-<div style={{ display: "flex", gap: "1rem" }}>
-  <h2>F</h2>
-  <ul
-    style={{
-      display: "flex",
-      flexWrap: "wrap",
-      listStyle: "none",
-      gap: "0 0.5rem",
-      paddingBottom: "1rem",
-    }}
-  >
-    <li>BIOL 140</li>
-    <li>PHYS 219</li>
-    <li>PHYS 304</li>
-  </ul>
-</div>
+<Tierlist ranks={
+  {
+    "S": ["PHYS 410", "MATH 400", "PHYS 449", "PHYS 402", "PHYS 409", "MATH 317"],
+    "A": ["PHYS 403", "PHYS 210", "PHYS 309", "PHYS 216", "SCIE 001", "MATH 316"],
+    "B": ["PHYS 401", "PHYS 229", "PHYS 474", "MATH 221", "MATH 215"],
+    "C": ["PHYS 407", "PHYS 306", "MATH 300", "MATH 318"],
+    "D": ["PHYS 200", "PHYS 203", "MATH 200", "PHYS 301"],
+    "F": ["BIOL 140", "PHYS 219", "PHYS 304"]
+  }
+}/>
+
+<sup>1</sup> The astute reader will note the inclusion of some non-physics courses in this list. All math courses listed are required for an
+honours physics degree. First-year science courses (here SCIE 001 and BIOL 140) were also included because the physics specialization does not
+begin until second year.

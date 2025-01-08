@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import { Navbar, Footer } from "@/components/Navigation";
+import KeyboardNavigator from "@/components/KeyboardNavigator";
 
 import "./globals.css";
-import "./globalicons.css";
+import "./code-themes.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,9 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
+      <KeyboardNavigator />
       <body>
         <Navbar />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

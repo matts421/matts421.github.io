@@ -1,8 +1,14 @@
 import Link from "next/link";
 
+const contact = {
+  email: "mailto:magsubc@student.ubc.ca",
+  linkedin: "https://www.linkedin.com/in/matthew-ag-smith/",
+  github: "https://github.com/matts421",
+};
+
 export const Navbar = () => {
   return (
-    <header className="header">
+    <header>
       <Link href="/">[h] home</Link>
       <Link href="/projects">[p] projects</Link>
       <Link href="/blog">[b] blog</Link>
@@ -13,19 +19,19 @@ export const Navbar = () => {
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="footer">
-      <ul>
-        <li>
-          <a href="mailto:magsubc@student.ubc.ca">email</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/matthew-ag-smith/">linkedin</a>
-        </li>
-        <li>
-          <a href="https://github.com/matts421">github</a>
-        </li>
-      </ul>
-      <div>{year}</div>
+    <footer>
+      <div className="contact">
+        <ul>
+          {Object.keys(contact).map((key, idx) => {
+            return (
+              <li key={`contact-${idx}`}>
+                <a href={contact[key]}>{key}</a>
+              </li>
+            );
+          })}
+        </ul>
+        <span>{year}</span>
+      </div>
     </footer>
   );
 };

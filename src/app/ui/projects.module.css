@@ -7,7 +7,7 @@
 .project {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--text-two);
+  border: 1px solid var(--gray-two);
   padding: 1rem;
 
   p {

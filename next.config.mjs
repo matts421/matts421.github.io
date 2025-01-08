@@ -9,6 +9,11 @@ const nextConfig = {
 
 const withMDX = createMDX({
   // Add markdown plugins here, as desired
+  options: {
+    rehypePlugins: [
+      ["rehype-starry-night", { strict: true, throwOnError: true }],
+    ],
+  },
 });
 
 // Merge MDX config with Next.js config

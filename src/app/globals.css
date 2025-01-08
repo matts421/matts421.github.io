@@ -35,10 +35,16 @@ a {
     color-scheme: dark;
   }
 } */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward");
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
+}
 
 :root {
   --gray-one: #1a1a1a;
   --gray-two: #3e3e3e;
+  --gray-three: #232323;
   --secondary: #02bcf5;
   --text-one: #e5e5e5;
   --text-two: #a0a0a0;
@@ -65,13 +71,18 @@ a {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+
   min-width: 320px;
   min-height: 100vh;
+}
+
+main {
   max-width: 55rem;
   width: 80%;
-
-  text-align: left;
-  margin: 2rem auto 0;
+  margin: 0 auto;
+  flex: 1;
 }
 
 section {
@@ -102,33 +113,37 @@ a:hover {
   animation: fadeIn 1s ease-in-out;
 }
 
-.header {
+header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
 
   color: var(--text-two);
-  position: relative;
   text-align: center;
-  top: 0;
-  margin: 0 0 2rem;
+  margin: 2rem 0 1rem;
 }
 
-.footer {
+footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  width: 100%;
   color: var(--text-two);
-  position: relative;
-  bottom: 0;
-  border-top: 1px solid var(--text-two);
-  padding: 0.25rem 0;
+  border-top: 1px solid var(--gray-two);
   margin: 1.75rem 0 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 55rem;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
 
   ul {
-    padding: 0;
     margin: 0;
     display: flex;
     list-style-type: none;

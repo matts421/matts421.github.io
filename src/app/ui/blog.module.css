@@ -1,3 +1,11 @@
 .blog-entries {
   list-style-type: none;
+  color: var(--text-one);
+}
+
+.tag {
+  background-color: var(--gray-two);
+  padding: 0rem 0.5rem;
+  border-radius: 8px;
+  color: var(--text-one);
 }
