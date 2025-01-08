@@ -20,7 +20,7 @@ const ProjectList = () => {
               </div>
             </a>
 
-            <p>{project.desc}</p>
+            <p className={styles.text}>{project.desc}</p>
             <div
               style={{
                 display: "flex",
@@ -28,8 +28,10 @@ const ProjectList = () => {
                 justifyContent: "space-between",
               }}
             >
-              <em>{project.tech.join(" • ").toLocaleLowerCase()}</em>
-              <em>{project.time.join(" • ")}</em>
+              <em className={styles.ital}>
+                {project.tech.join(" • ").toLocaleLowerCase()}
+              </em>
+              <em className={styles.ital}>{project.time.join(" • ")}</em>
             </div>
           </div>
         ))}

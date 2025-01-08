@@ -23,24 +23,24 @@ export default function Home() {
       </section>
       <section>
         {sectionTitle("Education")}
-        <ul id={styles.education}>
-          <li>
-            <div>
+        <ul style={{ listStyleType: "none" }}>
+          <li className={styles["edu-item"]}>
+            <div className={styles["degree-stack"]}>
               Bachelor of Computer Science
               <div className="data">
                 <em>University of British Columbia</em>
               </div>
             </div>
-            <span>2025</span>
+            <span className={styles.date}>2025</span>
           </li>
-          <li>
-            <div>
+          <li className={styles["edu-item"]}>
+            <div className={styles["degree-stack"]}>
               Bachelor of Science in Honours Physics
               <div className="data">
                 <em>University of British Columbia</em>
               </div>
             </div>
-            <span>2023</span>
+            <span className={styles.date}>2023</span>
           </li>
         </ul>
       </section>

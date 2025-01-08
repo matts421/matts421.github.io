@@ -10,13 +10,13 @@
   border: 1px solid var(--gray-two);
   padding: 1rem;
 
-  p {
+  .text {
     margin: 0;
     padding: 0.25rem 0 1rem;
     color: var(--text-two);
   }
 
-  em {
+  .ital {
     font-size: smaller;
   }
 }

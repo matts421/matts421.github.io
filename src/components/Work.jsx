@@ -7,17 +7,17 @@ export const JobList = () => {
   return (
     <ul className={styles["job-list"]}>
       {jobs.map((job, idx) => (
-        <li key={`work-${idx}`}>
+        <li key={`work-${idx}`} className={styles.job}>
           <a href={job.link} target="_blank">
             {job.name}
           </a>
           <div>
-            <em>
+            <em className={styles["job-role"]}>
               {job.role} • {job.time.join(" - ")}
             </em>
           </div>
           <div className="data">
-            <p>{job.desc}</p>
+            <p className={styles["job-desc"]}>{job.desc}</p>
           </div>
         </li>
       ))}

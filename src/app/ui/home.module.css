@@ -2,78 +2,64 @@
   color: var(--secondary);
 }
 
-#education {
-  list-style-type: none;
+.edu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.25rem 0;
 
-  li {
+  .degree-stack {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    padding: 0.25rem 0;
-
-    * {
-      background-color: var(--gray-one);
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      padding-right: 0.5rem;
-    }
-
-    span {
-      padding-left: 0.5rem;
-    }
-
-    em {
-      color: var(--text-two);
-      font-size: smaller;
-    }
+    flex-direction: column;
+    padding-right: 0.5rem;
+    background-color: var(--gray-one);
   }
 
-  li::before {
-    content: "";
-    position: absolute;
-    top: 30%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: var(--text-two);
-    z-index: -1;
+  .date {
+    padding-left: 0.5rem;
+    background-color: var(--gray-one);
   }
+
+  .school-name {
+    color: var(--text-two);
+    font-size: smaller;
+  }
+}
+
+.edu-item::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--text-two);
+  z-index: -1;
 }
 
 .job-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
 
-  li {
+  .job {
     padding: 0.1rem 0 1rem;
 
-    p {
-      margin: 0 0 0.5rem;
+    .job-desc {
+      margin: 0.5rem 0 0.5rem;
       color: var(--text-two);
     }
 
-    div {
-      display: flex;
-      flex-direction: column;
-      padding-right: 0.5rem;
-    }
-
-    span {
-      padding-left: 0.5rem;
-    }
-
-    em {
+    .job-role {
       font-size: smaller;
       padding-bottom: 0.5rem;
     }
   }
 
-  li:hover {
+  .job:hover {
     color: var(--secondary);
   }
 }
