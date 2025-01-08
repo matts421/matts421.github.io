@@ -16,7 +16,7 @@ const ProjectList = () => {
                 }}
               >
                 {project.name}
-                <span className="material-symbols-outlined">arrow_outward</span>
+                <span style={{ fontSize: "large" }}>↗</span>
               </div>
             </a>
 
