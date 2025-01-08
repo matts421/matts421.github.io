@@ -28,7 +28,9 @@ export default function Home() {
             <div className={styles["degree-stack"]}>
               Bachelor of Computer Science
               <div className="data">
-                <em>University of British Columbia</em>
+                <em className={styles["school-name"]}>
+                  University of British Columbia
+                </em>
               </div>
             </div>
             <span className={styles.date}>2025</span>
@@ -37,7 +39,9 @@ export default function Home() {
             <div className={styles["degree-stack"]}>
               Bachelor of Science in Honours Physics
               <div className="data">
-                <em>University of British Columbia</em>
+                <em className={styles["school-name"]}>
+                  University of British Columbia
+                </em>
               </div>
             </div>
             <span className={styles.date}>2023</span>
