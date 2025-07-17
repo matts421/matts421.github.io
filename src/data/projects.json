@@ -1,5 +1,12 @@
 [
   {
+    "name": "Nova ♥",
+    "tech": ["C++", "OpenGL"],
+    "time": ["01/2025", "05/2025"],
+    "link": "https://github.com/matts421/nova",
+    "desc": "A top-down pixel art RPG. Repair your spaceship to escape planet Nova!"
+  },
+  {
     "name": "A Snail's Adventure ♥",
     "tech": ["Haskell", "SDL2"],
     "time": ["11/2024", "12/2024"],

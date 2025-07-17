@@ -12,9 +12,9 @@ export default function Home() {
         <h1 style={{ marginBottom: 0 }}>Matthew Smith</h1>
         <JobIntro />
         <p>
-          I'm a senior CS student at UBC. I have a background in physics,
-          machine learning, and software engineering. I love learning new
-          things, solving problems, and building quality software.
+          I have a background in physics, machine learning, and software
+          engineering. I love learning new things, solving problems, and
+          building quality software.
         </p>
       </section>
       <section>

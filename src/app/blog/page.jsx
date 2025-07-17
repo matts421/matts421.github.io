@@ -11,7 +11,7 @@ export default async function Blog() {
         <div className="data">
           <ul className={styles["blog-entries"]}>
             {posts.map((post, idx) => (
-              <li key={`blog-${idx}`}>
+              <li key={`blog-${idx}`} style={{ marginTop: "0.5rem" }}>
                 <div
                   style={{
                     display: "flex",

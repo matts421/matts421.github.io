@@ -6,8 +6,8 @@ const ProjectList = () => {
     <div style={{ width: "95%", margin: "auto" }}>
       <div className={styles.grid}>
         {projects.map((project, idx) => (
-          <div key={`project-${idx}`} className={styles.project}>
-            <a href={project.link} target="_blank">
+          <a key={`project-${idx}`} href={project.link} target="_blank">
+            <div className={styles.project}>
               <div
                 style={{
                   display: "flex",
@@ -16,24 +16,23 @@ const ProjectList = () => {
                 }}
               >
                 {project.name}
-                <span style={{ fontSize: "large" }}>↗</span>
               </div>
-            </a>
 
-            <p className={styles.text}>{project.desc}</p>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-              }}
-            >
-              <em className={styles.ital}>
-                {project.tech.join(" • ").toLocaleLowerCase()}
-              </em>
-              <em className={styles.ital}>{project.time.join(" • ")}</em>
+              <p className={styles.text}>{project.desc}</p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
+                <em className={styles.ital}>
+                  {project.tech.join(" • ").toLocaleLowerCase()}
+                </em>
+                <em className={styles.ital}>{project.time.join(" • ")}</em>
+              </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

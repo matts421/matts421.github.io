@@ -10,12 +10,12 @@ export const JobList = () => {
         <li key={`work-${idx}`} className={styles.job}>
           <a href={job.link} target="_blank">
             {job.name}
-          </a>
-          <div>
+            <br />
             <em className={styles["job-role"]}>
               {job.role} • {job.time.join(" - ")}
             </em>
-          </div>
+          </a>
+          <div></div>
           <div className="data">
             <p className={styles["job-desc"]}>{job.desc}</p>
           </div>
