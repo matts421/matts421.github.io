@@ -8,13 +8,11 @@ export const JobList = () => {
     <ul className={styles["job-list"]}>
       {jobs.map((job, idx) => (
         <li key={`work-${idx}`} className={styles.job}>
-          <a href={job.link} target="_blank">
             {job.name}
             <br />
             <em className={styles["job-role"]}>
               {job.role} • {job.time.join(" - ")}
             </em>
-          </a>
           <div></div>
           <div className="data">
             <p className={styles["job-desc"]}>{job.desc}</p>
