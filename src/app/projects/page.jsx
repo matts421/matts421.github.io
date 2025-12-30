@@ -49,7 +49,6 @@ const Projects = () => {
       <div className="data">
         <ProjectList />
       </div>
-      <p>♥ personal favourites</p>
     </>
   );
 };

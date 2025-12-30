@@ -1,48 +1,13 @@
 [
   {
-    "name": "Nova ♥",
+    "name": "Nova",
     "tech": ["C++", "OpenGL"],
     "time": ["01/2025", "05/2025"],
     "link": "https://github.com/matts421/nova",
     "desc": "A top-down pixel art RPG. Repair your spaceship to escape planet Nova!"
   },
   {
-    "name": "A Snail's Adventure ♥",
-    "tech": ["Haskell", "SDL2"],
-    "time": ["11/2024", "12/2024"],
-    "link": "https://github.com/matts421/Haskell-Game",
-    "desc": "A functional snail-themed take on Chrome's Dinosaur Game."
-  },
-  {
-    "name": "AI-tinerary ♥",
-    "tech": ["React", "MongoDB", "Google Maps", "OpenAI"],
-    "time": ["06/2024", "08/2024"],
-    "link": "https://ai-tinerary-client.onrender.com/",
-    "desc": "Full-stack travel companion. Harness the power of AI to to craft travel itineraries tailored to the user."
-  },
-  {
-    "name": "Song Sorter",
-    "tech": ["Python", "Spotify", "FFmpeg"],
-    "time": ["07/2023", "08/2023"],
-    "link": "https://github.com/matts421/Song-Sorter",
-    "desc": "Simple CLI to populate missing metadata in MP3/MP4a files, and sort them by album and artist."
-  },
-  {
-    "name": "Bonehead Discord Bot",
-    "tech": ["Python", "Discord", "Raspberry Pi"],
-    "time": ["05/2023", "08/2023"],
-    "link": "https://github.com/matts421/Bonehead",
-    "desc": "Discord bot with casino-style games and music playback. Self-hosted on a Raspberry Pi."
-  },
-  {
-    "name": "G1!tch",
-    "tech": ["Java", "Swing", "JUnit"],
-    "time": ["05/2023", "08/2023"],
-    "link": "https://github.com/matts421/Glitch-Game-Project",
-    "desc": "Roguelike 2D platformer proof-of-concept in Java."
-  },
-  {
-    "name": "GW Extraction with LISA ♥",
+    "name": "GW Extraction with LISA",
     "tech": ["Python", "LaTeX", "matplotlib"],
     "time": ["09/2022", "05/2023"],
     "link": "/thesis.pdf",
