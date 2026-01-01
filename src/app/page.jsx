@@ -1,4 +1,4 @@
-import { JobIntro, JobList } from "@/components/Work";
+import { JobIntro } from "@/components/Work";
 import styles from "@/app/ui/home.module.css";
 import projects from "@/data/projects.json";
 

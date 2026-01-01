@@ -1,7 +1,7 @@
 const contact = {
   email: "mailto:magsubc@student.ubc.ca",
   linkedin: "https://www.linkedin.com/in/matthew-ag-smith/",
-  github: "https://github.com/matts421",
+  github: "https://github.com/matt-smi",
 };
 
 export const Navbar = () => {
