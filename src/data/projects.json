@@ -4,13 +4,13 @@
     "tech": ["C++", "OpenGL"],
     "time": ["01/2025", "05/2025"],
     "link": "https://github.com/matts421/nova",
-    "desc": "A top-down pixel art RPG. Repair your spaceship to escape planet Nova!"
+    "desc": "Explore the foreign planet Nova as a crash-landed astronaut in this 2D top-down RPG."
   },
   {
-    "name": "GW Extraction with LISA",
-    "tech": ["Python", "LaTeX", "matplotlib"],
+    "name": "GW Signal Extraction for LISA",
+    "tech": ["Python", "NumPy", "SciPy"],
     "time": ["09/2022", "05/2023"],
     "link": "/thesis.pdf",
-    "desc": "Parameter optimization of Tukey windowing for time-series gravitational wave (GW) artifact removal."
+    "desc": "Developing novel statistical techniques to disambiguate signal from noise in gravitational waves."
   }
 ]

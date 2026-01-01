@@ -1,8 +1,45 @@
 import { JobIntro, JobList } from "@/components/Work";
 import styles from "@/app/ui/home.module.css";
+import projects from "@/data/projects.json";
 
-const sectionTitle = (title) => {
-  return <h2>{title}</h2>;
+const Projects = () => {
+  return (
+    <div className="data">
+      <div style={{ width: "95%", margin: "auto" }}>
+        <div className={styles.grid}>
+          {projects.map((project, idx) => (
+            <a key={`project-${idx}`} href={project.link} target="_blank">
+              <div className={styles.project}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  {project.name}
+                </div>
+
+                <p className={styles.text}>{project.desc}</p>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <em className={styles.ital}>
+                    {project.tech.join(" • ").toLocaleLowerCase()}
+                  </em>
+                  <em className={styles.ital}>{project.time.join(" • ")}</em>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default function Home() {
@@ -11,42 +48,9 @@ export default function Home() {
       <section>
         <h1 style={{ marginBottom: 0 }}>Matthew Smith</h1>
         <JobIntro />
-        <p>
-          I have a background in physics, machine learning, and software
-          engineering. I love learning new things, solving problems, and
-          building quality software.
-        </p>
       </section>
       <section>
-        {sectionTitle("Experience")}
-        <JobList />
-      </section>
-      <section>
-        {sectionTitle("Education")}
-        <ul style={{ listStyleType: "none" }}>
-          <li className={styles["edu-item"]}>
-            <div className={styles["degree-stack"]}>
-              Bachelor of Computer Science
-              <div className="data">
-                <em className={styles["school-name"]}>
-                  University of British Columbia
-                </em>
-              </div>
-            </div>
-            <span className={styles.date}>2025</span>
-          </li>
-          <li className={styles["edu-item"]}>
-            <div className={styles["degree-stack"]}>
-              Bachelor of Science in Honours Physics
-              <div className="data">
-                <em className={styles["school-name"]}>
-                  University of British Columbia
-                </em>
-              </div>
-            </div>
-            <span className={styles.date}>2023</span>
-          </li>
-        </ul>
+        <Projects />
       </section>
     </>
   );

@@ -1,65 +1,32 @@
 #intro {
-  color: var(--secondary);
+    color: var(--secondary);
 }
 
-.edu-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  padding: 0.25rem 0;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
 
-  .degree-stack {
+.project {
     display: flex;
     flex-direction: column;
-    padding-right: 0.5rem;
-    background-color: var(--gray-one);
-  }
+    border: 1px solid var(--gray-two);
+    padding: 1rem;
 
-  .date {
-    padding-left: 0.5rem;
-    background-color: var(--gray-one);
-  }
-
-  .school-name {
-    color: var(--text-two);
-    font-size: smaller;
-  }
-}
-
-.edu-item::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: var(--text-two);
-  z-index: -1;
-}
-
-.job-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-
-  .job {
-    padding: 0.1rem 0 1rem;
-
-    .job-desc {
-      margin: 0.5rem 0 0.5rem;
-      color: var(--text-two);
+    .text {
+        margin: 0;
+        padding: 0.25rem 0 1rem;
+        color: var(--text-two);
     }
 
-    .job-role {
-      font-size: smaller;
-      padding-bottom: 0.5rem;
+    .ital {
+        font-size: smaller;
     }
-  }
+}
 
-  .job:hover {
+.project:hover {
     color: var(--secondary);
-  }
+    border: 1px solid var(--secondary);
+    transform: scale(1.05);
 }

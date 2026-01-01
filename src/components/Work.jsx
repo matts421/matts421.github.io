@@ -8,11 +8,11 @@ export const JobList = () => {
     <ul className={styles["job-list"]}>
       {jobs.map((job, idx) => (
         <li key={`work-${idx}`} className={styles.job}>
-            {job.name}
-            <br />
-            <em className={styles["job-role"]}>
-              {job.role} • {job.time.join(" - ")}
-            </em>
+          {job.name}
+          <br />
+          <em className={styles["job-role"]}>
+            {job.role} • {job.time.join(" - ")}
+          </em>
           <div></div>
           <div className="data">
             <p className={styles["job-desc"]}>{job.desc}</p>
@@ -28,8 +28,26 @@ export const JobIntro = () => {
   const curr = work.jobs[0];
 
   const content = employed
-    ? curr.role + " @ " + curr.name
+    ? curr.role
     : "Seeking roles in " + work.roles.join(", ");
 
-  return <div id={styles.intro}>{content}</div>;
+  const currCompanyContent = employed ? (
+    <>
+      {" "}
+      Currently at{" "}
+      <a href={curr.link} target="_blank">
+        {curr.name}
+      </a>
+      .
+    </>
+  ) : (
+    ""
+  );
+
+  return (
+    <>
+      <div id={styles.intro}>{content}</div>
+      <p>I love learning and building new things.{currCompanyContent}</p>
+    </>
+  );
 };

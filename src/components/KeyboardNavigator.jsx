@@ -9,14 +9,8 @@ const KeyboardNavigator = () => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       switch (event.key) {
-        case "b":
-          router.push("/blog");
-          break;
         case "h":
           router.push("/");
-          break;
-        case "p":
-          router.push("/projects");
           break;
         default:
           break;
