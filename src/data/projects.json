@@ -3,7 +3,7 @@
     "name": "Nova",
     "tech": ["C++", "OpenGL"],
     "time": ["01/2025", "05/2025"],
-    "link": "https://github.com/matts-smi/nova",
+    "link": "https://github.com/matt-smi/nova",
     "desc": "Explore the foreign planet Nova as a crash-landed astronaut in this 2D top-down RPG."
   },
   {
