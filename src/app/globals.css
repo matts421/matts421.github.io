@@ -66,10 +66,6 @@ a:hover {
     color: var(--secondary);
 }
 
-.data {
-    animation: fadeIn 1s ease-in-out;
-}
-
 header {
     display: flex;
     flex-direction: row;

@@ -18,10 +18,11 @@ export async function getPosts() {
 export async function loadMetadata() {
   const names = await loadFiles();
   const files = await Promise.all(
-    names.map((name) => readFile(path.join(dir, name)))
+    names.map((name) => readFile(path.join(dir, name))),
   );
   return files
     .map((file) => matter(file).data)
+    .filter((data) => !data.hidden)
     .sort((f1, f2) => {
       const d1 = new Date(f1.date);
       const d2 = new Date(f2.date);
