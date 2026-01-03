@@ -47,7 +47,10 @@ export const JobIntro = () => {
   return (
     <>
       <div id={styles.intro}>{content}</div>
-      <p>I love learning and building new things.{currCompanyContent}</p>
+      <p>
+        Interested in low-level and distributed systems.
+        {currCompanyContent}
+      </p>
     </>
   );
 };

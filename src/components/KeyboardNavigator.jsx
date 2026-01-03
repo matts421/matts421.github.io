@@ -12,6 +12,9 @@ const KeyboardNavigator = () => {
         case "h":
           router.push("/");
           break;
+        case "b":
+          router.push("/blog");
+          break;
         default:
           break;
       }

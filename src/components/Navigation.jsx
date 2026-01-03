@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const contact = {
   email: "mailto:magsubc@student.ubc.ca",
   linkedin: "https://www.linkedin.com/in/matthew-ag-smith/",
@@ -5,7 +7,12 @@ const contact = {
 };
 
 export const Navbar = () => {
-  return <header></header>;
+  return (
+    <header>
+      <Link href="/">[h] home</Link>
+      <Link href="/blog">[b] blog</Link>
+    </header>
+  );
 };
 
 export const Footer = () => {
